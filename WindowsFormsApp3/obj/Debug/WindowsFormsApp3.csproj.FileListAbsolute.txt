@@ -16,3 +16,4 @@ C:\Users\kapus\OneDrive\Рабочий стол\экс\WindowsFormsApp3\WindowsF
 C:\Users\kapus\OneDrive\Рабочий стол\экс\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Users.resources
 C:\Users\kapus\OneDrive\Рабочий стол\экс\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.DeleteFormcs.resources
 C:\Users\kapus\OneDrive\Рабочий стол\экс\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Order.resources
+C:\Users\kapus\OneDrive\Рабочий стол\экс\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.ProductCard.resources

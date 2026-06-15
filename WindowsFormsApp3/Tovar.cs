@@ -29,5 +29,17 @@ namespace WindowsFormsApp3
             new Manager(UserData.Name).Show();
             this.Visible = false;
         }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            var hit = dataGridView1.HitTest(e.X, e.Y);
+
+            if (hit.RowIndex < 0) return;
+
+            DataGridViewRow selectedRow = dataGridView1.Rows[hit.RowIndex];
+
+            ProductCard cardForm = new ProductCard(selectedRow);
+            cardForm.Show();
+        }
     }
 }

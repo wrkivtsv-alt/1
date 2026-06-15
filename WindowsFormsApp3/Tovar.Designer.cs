@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.treining1DataSet = new WindowsFormsApp3.Treining1DataSet();
-            this.tovarBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tovarTableAdapter = new WindowsFormsApp3.Treining1DataSetTableAdapters.TovarTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.articleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameingDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,10 +42,13 @@
             this.countDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.noteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tovarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.treining1DataSet = new WindowsFormsApp3.Treining1DataSet();
+            this.tovarTableAdapter = new WindowsFormsApp3.Treining1DataSetTableAdapters.TovarTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.treining1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tovarBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.treining1DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -73,20 +73,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1243, 438);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // treining1DataSet
-            // 
-            this.treining1DataSet.DataSetName = "Treining1DataSet";
-            this.treining1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tovarBindingSource
-            // 
-            this.tovarBindingSource.DataMember = "Tovar";
-            this.tovarBindingSource.DataSource = this.treining1DataSet;
-            // 
-            // tovarTableAdapter
-            // 
-            this.tovarTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -161,6 +148,20 @@
             this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
             this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
             // 
+            // tovarBindingSource
+            // 
+            this.tovarBindingSource.DataMember = "Tovar";
+            this.tovarBindingSource.DataSource = this.treining1DataSet;
+            // 
+            // treining1DataSet
+            // 
+            this.treining1DataSet.DataSetName = "Treining1DataSet";
+            this.treining1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tovarTableAdapter
+            // 
+            this.tovarTableAdapter.ClearBeforeFill = true;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(58, 493);
@@ -182,8 +183,8 @@
             this.Text = "Tovar";
             this.Load += new System.EventHandler(this.Tovar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.treining1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tovarBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.treining1DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
